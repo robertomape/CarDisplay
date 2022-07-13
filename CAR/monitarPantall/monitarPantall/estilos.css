@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+}
+
+.sizemaps {
+    border-radius: 10px;
+}
+
+.contenedor {
+    width: 100%;
+    height: 550px;
+    /*50vh*/
+    border: black 2px solid;
+    background-color: #004050;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pantalla {
+    width: 90%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contenerdorMenu {
+    width: 90%;
+    height: 20%;
+    background-color: #004050;
+    ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+[class*="btnMenu"] {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    outline: none;
+    font-size: 15px;
+    color: white;
+}
+
+[class*="componente"] {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    place-items: center;
+}
+
+
+/* Fondo */
+
+
+/* *Menu con botones */
+
+.imgMenuReproductor {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(102, 134, 133);
+    /* border-radius: 20px;
+    border: solid 2px black; */
+}
+
+.imgMenuReproductorCentral {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(102, 134, 133);
+    /* border-radius: 20px;
+    border: solid 2px black; */
+}
+
+.imgMenuReproductor:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.imgMenuReproductorCentral:hover {
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
+
+.esconder {
+    display: none;
+}
+
+.reproductorMp3 {
+    background-color: rgb(102, 134, 133);
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.btnPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuBtn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lineaVol {
+    margin-left: 130px;
+    position: relative;
+}
+
+.imgVol {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -23px;
+    top: -1px;
+}
+
+.sliderRepoduccion {
+    appearance: none;
+    width: 350px;
+    height: 5px;
+    background-color: rgb(255, 0, 234);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(10, 10, 9);
+}
+
+.sliderVolumen {
+    appearance: none;
+    width: 100px;
+    height: 5px;
+    background-color: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.imagengoogle {
+    width: 300px;
+    height: 100px;
+}
+
+
+/* temperature */
+
+.weather-wrapper {
+    margin-top: -35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.weather-card {
+    margin: 20px 5px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(109, 102, 102);
+    box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+}
+
+.weather-card h1 {
+    position: absolute;
+    font-weight: 300;
+    font-size: 80px;
+    color: #b8b8b8;
+    bottom: 0;
+    left: 35px;
+}
+
+.weather-card p {
+    position: absolute;
+    font-weight: 300;
+    font-size: 28px;
+    color: #d2d2d2;
+    bottom: 0;
+    left: 35px;
+}
+
+
+/* Menu Apps */
+
+.Menu {
+    color: white;
+    font: normal 50px 'Yanone Kaffeesatz', sans-serif;
+    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+.Menu:hover {
+    text-shadow: 0 0 4px white;
+}
+
+div[class^="metro"] {
+    float: left;
+    margin: 0 10px 10px 0;
+    height: 95px;
+    position: relative;
+    cursor: pointer;
+    transition: all .4s ease;
+    border: solid 2px transparent;
+}
+
+div[class^="metro"]:hover {
+    border: solid 2px mintcream;
+}
+
+.metro-big {
+    width: 200px;
+}
+
+.metro-small {
+    width: 95px;
+}
+
+.last {
+    margin-right: 10px !important;
+}
+
+.space {
+    margin-bottom: 20px;
+}
+
+.label {
+    position: absolute;
+    color: white;
+    font: 500 12px sans-serif;
+    left: 10px;
+    user-select: none;
+}
+
+.bottom {
+    bottom: 5px;
+}
+
+.top {
+    top: 5px;
+}
+
+.chat {
+    background: #df0024;
+}
+
+.calendar {
+    background: #00a9ec;
+}
+
+.store {
+    background: #ff9000;
+}
+
+.people {
+    background: #0e5d30;
+}
+
+.video {
+    background: #8b0189;
+}
+
+.games {
+    background: #00ff00;
+}
+
+.gp {
+    background: #d64136;
+}
+
+.bt {
+    background: #2546e9;
+}
+
+.tube {
+    background: #c8312b;
+}
+
+div[class^="icon"] {
+    width: 45px;
+    height: 45px;
+    margin: 20px auto;
+    background-size: 45px 45px;
+}
+
+.icon-calendar {
+    background: url('./menuphotos/Apps-Calendar-Metro-icon.png');
+}
+
+.icon-chat {
+    background: url('./menuphotos/Other-Mail-alt-Metro-icon.png');
+}
+
+.icon-store {
+    background: url('./menuphotos/mstor.png');
+}
+
+.icon-people {
+    background: url('./menuphotos/Folders-OS-User-No-Frame-Metro-icon.png');
+}
+
+.icon-video {
+    background: url('./menuphotos/Folders-OS-My-Videos-Metro-icon.png');
+}
+
+.icon-games {
+    background: url('./menuphotos/Folders-OS-Games-alt-Metro-icon.png');
+}
+
+.icon-gp {
+    background: url('./menuphotos/Web-Google-plus-Metro-icon.png');
+}
+
+.icon-bt {
+    background: url('./menuphotos/Apps-Bluetooth-Metro-icon.png');
+}
+
+.icon-tube {
+    background: url('./menuphotos/Web-YouTube-alt-1-Metro-icon.png');
+}
+
+::selection {
+    background: white;
+}
+
+.gomonitor {
+    background-color: #0ce2f1;
+    top: 85%;
+    right: 50%;
+    position: absolute;
+}

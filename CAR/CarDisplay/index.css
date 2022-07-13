@@ -1,0 +1,631 @@
+.square {
+    width: 1500px;
+    /* Tamaño de la pantalla  */
+    height: 500px;
+    background: black;
+    border-radius: 20px;
+}
+
+#align {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.8);
+}
+
+#score-meter-3 {
+    transform: scale(1.6);
+    margin: 100px;
+}
+
+#score-meter-3 {
+    width: 280px;
+    height: 280px;
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    background-color: #000000;
+    overflow: hidden !important;
+}
+
+#scorer-3-main-tick {
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 140px;
+    height: 5px;
+    background-color: #3eedf2;
+    transform-origin: right center;
+    transform-origin: right center;
+    z-index: -999;
+    transition: all 2s ease-in-out;
+    transform: rotate(-40deg);
+}
+
+.scorer-tick-main {
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 125px;
+    height: 5px;
+    transform-origin: right center;
+    border-left: 15px solid #6d696c;
+    z-index: -1000;
+}
+
+#scorer-3-tick-1 {
+    transform: rotate(-40deg);
+    background-color: #494a4c;
+    border-left: 15px solid #494a4c;
+    opacity: 1;
+    height: 2px;
+    z-index: 16;
+}
+
+#scorer-3-tick-2 {
+    transform: rotate(-20deg);
+}
+
+#scorer-3-tick-3 {
+    transform: rotate(0deg);
+}
+
+#scorer-3-tick-4 {
+    transform: rotate(20deg);
+}
+
+#scorer-3-tick-5 {
+    transform: rotate(40deg);
+}
+
+#scorer-3-tick-6 {
+    transform: rotate(60deg);
+}
+
+#scorer-3-tick-7 {
+    transform: rotate(80deg);
+}
+
+#scorer-3-tick-8 {
+    transform: rotate(100deg);
+}
+
+#scorer-3-tick-9 {
+    transform: rotate(120deg);
+}
+
+#scorer-3-tick-10 {
+    transform: rotate(140deg);
+}
+
+#scorer-3-tick-11 {
+    transform: rotate(160deg);
+}
+
+#scorer-3-tick-12 {
+    transform: rotate(180deg);
+}
+
+#scorer-3-tick-13 {
+    transform: rotate(200deg);
+}
+
+.scorer-3-sub-tick {
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 130px;
+    height: 2px;
+    transform-origin: right center;
+    border-left: 10px solid #0ce2f1;
+    z-index: 10;
+}
+
+#scorer-3-sub-tick-1 {
+    transform: rotate(-30deg);
+}
+
+#scorer-3-sub-tick-2 {
+    transform: rotate(-10deg);
+}
+
+#scorer-3-sub-tick-3 {
+    transform: rotate(10deg);
+}
+
+#scorer-3-sub-tick-4 {
+    transform: rotate(30deg);
+}
+
+#scorer-3-sub-tick-5 {
+    transform: rotate(50deg);
+}
+
+#scorer-3-sub-tick-6 {
+    transform: rotate(70deg);
+}
+
+#scorer-3-sub-tick-7 {
+    transform: rotate(90deg);
+}
+
+#scorer-3-sub-tick-8 {
+    transform: rotate(110deg);
+}
+
+#scorer-3-sub-tick-9 {
+    transform: rotate(130deg);
+}
+
+#scorer-3-sub-tick-10 {
+    transform: rotate(150deg);
+}
+
+#scorer-3-sub-tick-11 {
+    transform: rotate(170deg);
+}
+
+#scorer-3-sub-tick-12 {
+    transform: rotate(190deg);
+}
+
+#scorer-3-sub-tick-13 {
+    transform: rotate(210deg);
+}
+
+#scorer-3-sub-tick-14 {
+    transform: rotate(220deg);
+    background-color: #494a4c;
+    border-left: 10px solid #494a4c;
+    opacity: 100;
+}
+
+.scorer-3-text {
+    position: absolute;
+    bottom: -25px;
+    left: 10px;
+    color: #eaf3ea;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+#inner-circle-3 {
+    z-index: 25;
+    position: absolute !important;
+    width: 140px;
+    height: 140px;
+    top: 70px;
+    left: 70px;
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+    border-radius: 50%;
+    border: 4px solid #494a4c;
+    position: relative;
+    background-color: #000000;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    width: 70%;
+    padding-left: 18%;
+    height: 70%;
+    padding-top: 15%;
+    height: auto;
+    margin: 0;
+    align-items: center;
+}
+
+.cuentakilometros {
+    position: absolute;
+    top: 210px;
+    left: 80px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.cuentatitulo {
+    color: white;
+    font-size: 25px;
+}
+
+
+/* Esto es para la nueva barra */
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    appearance: none;
+    width: 400px;
+    height: 15px;
+    background: #9d79e0;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 5px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    /* Button For Chrome , Opera, Safari and Edge to override default look */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    /* Button For firwfox to override default look*/
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+}
+
+
+/* Gasolina */
+
+.gasolina__imagen {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -500px;
+    left: -550px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.battery-outer {
+    background: transparent;
+    width: 500px;
+    height: 25px;
+    border: 3px solid white;
+    border-radius: 5px;
+    position: relative;
+    top: -250px;
+    left: 500px;
+    right: 0px;
+}
+
+.battery-level {
+    width: 100%;
+    height: 100%;
+    background: #3eedf2;
+}
+
+.intermittent__imagen1 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -350px;
+    left: -400px;
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+    margin: auto;
+}
+
+.intermittent__imagen2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -350px;
+    left: 450px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+/* arrow buttons */
+
+.button-rigth {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 30px;
+    color: aquamarine;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 00.2s;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.button-rigth:hover {
+    background-color: #9d79e0;
+    border-radius: 20px;
+}
+
+
+/* RPM  */
+
+#score-meter2 {
+    transform: scale(1.2);
+    margin: 100px;
+}
+
+#score-meter2 {
+    width: 280px;
+    height: 280px;
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    background-color: #000000;
+    overflow: hidden !important;
+}
+
+.layout-align2 {
+    left: -800px;
+    z-index: -1000;
+    top: 100px;
+}
+
+#scorer-2-main-tick {
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 140px;
+    height: 5px;
+    background-color: #3eedf2;
+    transform-origin: right center;
+    transform-origin: right center;
+    z-index: -999;
+    transition: all 2s ease-in-out;
+    transform: rotate(-40deg);
+}
+
+#inner-circle-2 {
+    z-index: 25;
+    position: absolute !important;
+    width: 80px;
+    height: 80px;
+    top: 100px;
+    left: 95px;
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+    border-radius: 50%;
+    border: 4px solid #494a4c;
+    position: relative;
+    background-color: #000000;
+}
+
+#score-meter-3 {
+    transform: scale(1.6);
+    margin: 100px;
+}
+
+#score-meter-3 {
+    width: 280px;
+    height: 280px;
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    background-color: #000000;
+    overflow: hidden !important;
+}
+
+#scorer-2-main-tick {
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 140px;
+    height: 5px;
+    background-color: #ffffff;
+    transform-origin: right center;
+    transform-origin: right center;
+    z-index: -999;
+    transition: all 2s ease-in-out;
+    transform: rotate(-60deg);
+}
+
+.scorer-tick-main-2 {
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 125px;
+    height: 5px;
+    transform-origin: right center;
+    border-left: 15px solid #ffffff;
+    z-index: -1000;
+}
+
+#scorer-2-tick-1 {
+    transform: rotate(-60deg);
+    background-color: #ffffff;
+    border-left: 15px solid #ffffff;
+    opacity: 1;
+    height: 2px;
+    z-index: 16;
+}
+
+#scorer-2-tick-2 {
+    transform: rotate(-60deg);
+}
+
+#scorer-2-tick-3 {
+    transform: rotate(-30deg);
+}
+
+#scorer-2-tick-4 {
+    transform: rotate(0deg);
+}
+
+#scorer-2-tick-5 {
+    transform: rotate(30deg);
+}
+
+#scorer-2-tick-6 {
+    transform: rotate(60deg);
+    border-left: 15px solid #ff0000;
+}
+
+#scorer-2-tick-7 {
+    transform: rotate(90deg);
+    border-left: 15px solid #ff0000;
+}
+
+#scorer-2-tick-8 {
+    transform: rotate(120deg);
+    border-left: 15px solid #ff0000;
+}
+
+.scorer-2-sub-tick {
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    width: 130px;
+    height: 2px;
+    transform-origin: right center;
+    border-left: 10px solid #e22f10;
+    z-index: 10;
+}
+
+#scorer-2-sub-tick-1 {
+    transform: rotate(-45deg);
+}
+
+#scorer-2-sub-tick-2 {
+    transform: rotate(-15deg);
+}
+
+#scorer-2-sub-tick-3 {
+    transform: rotate(15deg);
+}
+
+#scorer-2-sub-tick-4 {
+    transform: rotate(45deg);
+}
+
+#scorer-2-sub-tick-5 {
+    transform: rotate(75deg);
+}
+
+#scorer-2-sub-tick-6 {
+    transform: rotate(105deg);
+}
+
+#scorer-2-sub-tick-7 {
+    transform: rotate(120deg);
+    background-color: #ff0000;
+    height: 0.5px;
+    border-left: 10px solid #f30606;
+    opacity: 100;
+}
+
+.scorer-2-text {
+    position: absolute;
+    bottom: -25px;
+    left: 10px;
+    color: #ffffff;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+
+/* texto de x1000 */
+
+.RPM {
+    position: absolute;
+    top: 180px;
+    left: 120px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.x1000 {
+    color: white;
+    font-size: 25px;
+}
+
+
+/* Odometer */
+
+.btnOdometer {
+    border: none;
+    padding: 10px;
+    background-color: #000000;
+    color: aquamarine;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+.btnOdometer:hover {
+    background-color: #9d79e0;
+    border: none;
+}
+
+
+/* arrow buttons */
+
+.buttonarr {
+    position: relative;
+    font-size: 20px;
+    padding: 15px 30px;
+    color: aquamarine;
+    background-color: #000000;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.buttonarr:hover {
+    background-color: #9d79e0;
+    border-radius: 5px;
+    border: none;
+}
+
+
+/* Hour */
+
+.clock {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 500px;
+    left: 650px;
+    transform: translate(-50%, -50%);
+    font-family: Courier, monospace;
+    text-align: center;
+    text-shadow: 0 0 6px #000;
+    color: #fff;
+    letter-spacing: 10px;
+    user-select: none;
+    font-size: 3rem;
+}
+
+.clockcontainer {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Button to go to monitor */
+
+.gomonitor {
+    background-color: #0ce2f1;
+    top: 85%;
+    right: 50%;
+    position: absolute;
+}

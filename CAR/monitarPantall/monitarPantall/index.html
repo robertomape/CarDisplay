@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="pantalla ">
+            <div class="componente_1">
+                <!-- Puede cambiar el ancho(width) y el alto(height) en esta etiqueta y poner en px -->
+                <iframe class="sizemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9879.476785208224!2d19.445267158715684!3d51.75371538980344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a34d85d1152f3%3A0xbe75c3beee4bad56!2zVW5pdmVyc2lkYWQgUG9saXTDqWNuaWNhIGRlIMWBw7Nkxbo!5e0!3m2!1ses!2spl!4v1610451585605!5m2!1ses!2spl"
+                    width="90%" height="90%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <div class="componente_2 esconder">
+                <audio id="miReproductor" src="./assets/audio2.m4a"></audio>
+                <div class="reproductorMp3 ">
+                    <div class="menuBtn">
+                        <div class="btnPrincipal">
+                            <div class="btnDerecha"><img class="imgMenuReproductor" id="bDerecha" src="assets/nextleft.png" alt=""></div>
+                            <div class="pausaPlay"><img id="btnPlay" class="imgMenuReproductorCentral" src="assets/play.png" alt=""></div>
+                            <div class="btnIzquierda"><img class="imgMenuReproductor" id="bIquierda" src="assets/next.png" alt=""></div>
+                        </div>
+                        <div class="lineaVol">
+                            <img class="imgVol" src="assets/volume.png" alt="">
+                            <input type="range" class="sliderVolumen" min="1" max="99" value="50" id="lineaVolumen">
+                        </div>
+
+                    </div>
+                    <div class="lineaTemporal">
+                        <input type="range" class="sliderRepoduccion" min="1" max="100" value="0" id="lineaTiempo">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="componente_3 esconder">
+                <!--                 <iframe class="sizemaps" src="https://emisoras.com.mx/#ke-buena" width="90%" height="90%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                -->
+
+                <FORM method=GET action="http://www.google.com/search">
+                    <TABLE>
+                        <tr>
+                            <td>
+
+                                <IMG class="imagengoogle" SRC="./assets/google2.png" ALT="Google">
+                                <INPUT TYPE=text name=q size=31 maxlength=255 value="">
+
+                                <INPUT type=submit name=btnG VALUE="search">
+                            </td>
+                        </tr>
+                    </TABLE>
+                </FORM>
+
+            </div>
+
+            <div class="componente_4 esconder">
+                <div class="weather-wrapper">
+                    <div class="weather-card madrid">
+                        <div class="weather-icon sun"></div>
+                        <h1 class="cuentatitulo"></h1>
+                        <p>Lodz</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="componente_5 esconder">
+                <h1 class="Menu">Menu</h1>
+                <div class="wrap">
+                    <div class="metro-big chat">
+                        <div class="icon-chat"></div>
+                        <span class="label bottom">Mail</span>
+                    </div>
+                    <div class="metro-big calendar">
+                        <div class="icon-calendar"></div>
+                        <span class="label bottom">Calendar</span>
+                    </div>
+                    <div class="metro-small store">
+                        <div class="icon-store"></div>
+                        <span class="label bottom">Store</span>
+                    </div>
+
+                    <div class="metro-small people last">
+                        <div class="icon-people"></div>
+                        <span class="label bottom">People</span>
+                    </div>
+                    <div class="metro-big video">
+                        <div class="icon-video"></div>
+                        <span class="label bottom">Videos And Photos</span>
+                    </div>
+
+                    <div class="metro-small games last">
+                        <div class="icon-games"></div>
+                        <span class="label bottom">Games</span>
+                    </div>
+                    <div class="metro-small gp">
+                        <div class="icon-gp"></div>
+                        <span class="label bottom">Google+</span>
+                    </div>
+
+
+                </div>
+
+                <div class="wrap2">
+                    <div class="space"></div>
+                    <div class="metro-small bt">
+                        <div class="icon-bt"></div>
+                        <span class="label bottom">Bluetooth</span>
+                    </div>
+
+
+                    <div class="metro-small tube">
+                        <div class="icon-tube"></div>
+                        <span class="label bottom">Youtube</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="contenerdorMenu">
+            <button class="btnMenu-1">Maps</button>
+            <button class="btnMenu-2">Music</button>
+            <button class="btnMenu-3">Internet</button>
+            <button class="btnMenu-4">Temperature</button>
+            <button class="btnMenu-5">More Apps</button>
+        </div>
+
+
+
+    </div>
+
+    <input type="number" id="odometer">
+    <button id="enviarodometer" class="btnOdometer">Temperature</button>
+
+
+    <button class="gomonitor" id="moni"><a href="../../CarDisplay/index.html">Switch to speedometer</a>
+   
+    </button>
+    <script src="inde.js"></script>
+    <script>
+        const suma = (e) => {
+            console.log(e)
+        };
+    </script>
+</body>
+
+</html>
